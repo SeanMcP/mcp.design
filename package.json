@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
+  "name": "mcpherson-design",
+  "description": "Graphics, illustrations, and web",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Sean McPherson <sean@mcp.design>",
   "dependencies": {
     "gatsby": "^2.0.0",
     "gatsby-cli": "^2.4.2",
@@ -30,6 +30,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/seanmcp/mcp.design"
   }
 }
