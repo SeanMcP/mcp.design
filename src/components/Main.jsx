@@ -5,21 +5,19 @@ import PropTypes from 'prop-types'
 import ResponsiveWrapper from './ResponsiveWrapper'
 
 const Container = styled.header`
-    background: #ddd;
-    color: #333;
     width: 100%;
 `
 
-const Header = (props) => (
+const Main = ({ children }) => (
     <Container>
         <ResponsiveWrapper>
-            {props.siteTitle}
+            {children}
         </ResponsiveWrapper>
     </Container>
 )
 
-Header.propTypes = {
-    siteTitle: PropTypes.string.isRequired
+Main.propTypes = {
+    children: PropTypes.arrayOf(PropTypes.node)
 }
 
-export default Header
+export default Main

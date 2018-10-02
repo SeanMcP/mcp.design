@@ -1,7 +1,8 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-const WrapperTag = styled.div`
+const Container = styled.div`
     margin: 0 auto;
     max-width: 1000px;
 
@@ -12,7 +13,11 @@ const WrapperTag = styled.div`
 `
 
 const ResponsiveWrapper = ({ children }) => (
-    <WrapperTag>{children}</WrapperTag>
+    <Container>{children}</Container>
 )
+
+ResponsiveWrapper.propTypes = {
+    children: PropTypes.arrayOf(PropTypes.node)
+}
 
 export default ResponsiveWrapper
