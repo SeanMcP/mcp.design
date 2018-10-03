@@ -5,7 +5,7 @@ import { StaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
 
 import '../styles/index.css'
-import Header from './Header'
+import Header from './header/Header'
 import Main from './Main'
 
 const Container = styled.div`
