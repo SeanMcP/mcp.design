@@ -8,8 +8,8 @@ const links = [
         text: 'Home'
     },
     {
-        href: '/page-2/',
-        text: 'Page 2'
+        href: '/contact/',
+        text: 'Contact'
     },
 ]
 

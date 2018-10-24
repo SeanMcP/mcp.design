@@ -9,7 +9,7 @@ const Container = styled.div`
     display: flex;
     padding: 1em 0;
 
-    @media screen and (max-width: ${BREAKPOINTS.mobile}) {
+    @media screen and (max-width: ${BREAKPOINTS.desktop}) {
         flex-direction: column;
     }
 `
@@ -23,7 +23,7 @@ const Text = styled.div`
     flex-direction: column;
     margin-left: 1rem;
 
-    @media screen and (max-width: ${BREAKPOINTS.mobile}) {
+    @media screen and (max-width: ${BREAKPOINTS.desktop}) {
         align-items: center;
     }
 `

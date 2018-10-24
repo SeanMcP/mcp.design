@@ -18,7 +18,7 @@ const Flex = styled.div`
     display: flex;
     justify-content: space-between;
 
-    @media screen and (max-width: ${BREAKPOINTS.mobile}) {
+    @media screen and (max-width: ${BREAKPOINTS.desktop}) {
         flex-direction: column;
         padding-bottom: 1em;
     }
