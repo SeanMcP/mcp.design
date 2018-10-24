@@ -2,10 +2,16 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
+import BREAKPOINTS from '../../constants/breakpoints'
+
 const Container = styled.div`
     align-items: center;
     display: flex;
     padding: 1em 0;
+
+    @media screen and (max-width: ${BREAKPOINTS.mobile}) {
+        flex-direction: column;
+    }
 `
 
 const Image = styled.img`
@@ -16,6 +22,10 @@ const Text = styled.div`
     display: flex;
     flex-direction: column;
     margin-left: 1rem;
+
+    @media screen and (max-width: ${BREAKPOINTS.mobile}) {
+        align-items: center;
+    }
 `
 
 const Title = styled.h1`

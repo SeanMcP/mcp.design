@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
 
+import BREAKPOINTS from '../../constants/breakpoints'
 import HeaderLogo from './HeaderLogo'
 import HeaderNav from './HeaderNav'
 import ResponsiveWrapper from '../ResponsiveWrapper'
@@ -16,6 +17,11 @@ const Flex = styled.div`
     align-items: center;
     display: flex;
     justify-content: space-between;
+
+    @media screen and (max-width: ${BREAKPOINTS.mobile}) {
+        flex-direction: column;
+        padding-bottom: 1em;
+    }
 `
 
 const Header = (props) => (
@@ -24,7 +30,6 @@ const Header = (props) => (
             <Flex>
                 <HeaderLogo
                     imageSrc={require('../../images/gatsby-icon.png')}
-                    tagline={"Illustrations and Web"}
                     title={props.siteTitle}
                 />
                 <HeaderNav />
