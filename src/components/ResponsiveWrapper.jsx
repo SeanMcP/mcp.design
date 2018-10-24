@@ -1,5 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 const Container = styled.div`
@@ -14,9 +13,5 @@ const Container = styled.div`
 const ResponsiveWrapper = ({ children }) => (
     <Container>{children}</Container>
 )
-
-ResponsiveWrapper.propTypes = {
-    children: PropTypes.arrayOf(PropTypes.node)
-}
 
 export default ResponsiveWrapper
