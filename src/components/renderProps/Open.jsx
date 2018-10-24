@@ -20,9 +20,12 @@ class Open extends React.Component {
     render() {
         const { status } = this.state
         const renderProps = {
+            close: this.close,
             isClosed: status === 'closed',
             isOpen: status !== 'closed',
-            status
+            open: this.open,
+            status,
+            toggle: this.toggle,
         }
 
         const { children } = this.props
