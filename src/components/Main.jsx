@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import PropTypes from 'prop-types'
 
 import ResponsiveWrapper from './ResponsiveWrapper'
 
@@ -15,9 +14,5 @@ const Main = ({ children }) => (
         </ResponsiveWrapper>
     </Container>
 )
-
-Main.propTypes = {
-    children: PropTypes.arrayOf(PropTypes.node)
-}
 
 export default Main
