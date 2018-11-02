@@ -42,7 +42,7 @@ header div {
     justify-content: space-between;
 }
 
-header .logo {
+header #logo {
     align-items: center;
     display: flex;
 }
@@ -61,7 +61,7 @@ header nav a:hover, header nav a:active {
     color: white;
 }
 
-section.logo img {
+#logo img {
     height: 4rem;
 }
 
