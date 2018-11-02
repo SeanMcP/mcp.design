@@ -43,6 +43,35 @@ section.logo img {
     height: 4rem;
 }
 
+footer {
+    background: gray;
+}
+
+footer div {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer li:not(:last-of-type) {
+    margin-bottom: 1rem;
+}
+
+footer li a {
+    align-items: center;
+    display: flex;
+    text-decoration: none;
+}
+
+/* Responsive */
+
 .mobile-only {
     display: none;
 }
