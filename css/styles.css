@@ -22,12 +22,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 header {
-    background: white;
+    background: transparent;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.125);
     left: 0;
     position: fixed;
     right: 0;
     top: 0;
+    transition: all var(--standard-transition);
 }
 
 header div {
@@ -57,6 +58,10 @@ header nav a:hover {
 
 section.logo img {
     height: 4rem;
+}
+
+section.banner img {
+    width: 100%;
 }
 
 footer {
@@ -104,5 +109,15 @@ footer li a {
 
     .mobile-only {
         display: initial;
+    }
+
+    body > footer div {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    footer ul {
+        align-items: center;
+        margin: 1rem 0 0;
     }
 }
