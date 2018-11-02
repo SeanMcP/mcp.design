@@ -19,8 +19,32 @@ h1, h2, h3, h4, h5, h6 {
     padding: 1rem 0;
 }
 
+header {
+    background: white;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.125);
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+
+body > header + * {
+    margin-top: 100px;
+}
+
+header div {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+header .logo {
+    align-items: center;
+    display: flex;
+}
+
 section.logo img {
-    max-width: 50%;
+    height: 4rem;
 }
 
 .mobile-only {
