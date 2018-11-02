@@ -10,16 +10,22 @@ try {
 }
 
 var header = document.querySelector('body > header');
-// header.nextElementSibling.style.paddingTop = `${header.offsetHeight}px`;
 
 function changeHeaderOnScroll() {
-    // Consider toggling a class here instead
     if (document.scrollingElement.scrollTop > header.offsetHeight / 2) {
-        header.style.backgroundColor = 'white';
+        header.classList.add('scrolled')
     } else {
-        header.removeAttribute('style');
+        header.classList.remove('scrolled');
     }
 }
 
+function offsetHeaderHeight() {
+    var nodes = document.querySelectorAll('.offset-header');
+    nodes.forEach(function(node) {
+        node.style.paddingTop = `${header.offsetHeight}px`;
+    });
+}
+
+offsetHeaderHeight();
 changeHeaderOnScroll();
 window.addEventListener('scroll', changeHeaderOnScroll);
