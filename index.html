@@ -17,8 +17,11 @@
             <section class="logo">
                 <img src="https://raw.githubusercontent.com/mcpdesign/resources/master/logo/logo-pink.png" alt="McPherson Design Logo">
                 <h1>McPherson Design</h1>
-                <p class="tagline">Graphics & illustrations</p>
+                <p class="tagline desktop-only">Graphics & illustrations</p>
             </section>
+            <div class="mobile-nav-button mobile-only">
+                MENU
+            </div>
             <nav>
                 <a data-scroll href="#home">Home</a>
                 <a data-scroll href="#work">Work</a>
@@ -58,7 +61,7 @@
             </section>
         </div>
     </main>
-    <footer data-aos="fade-in">
+    <footer>
         <div class="responder">
             <section>
                 Copyright © McPherson Design LLC 2018
@@ -78,7 +81,7 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14/dist/smooth-scroll.polyfills.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <!-- <script src="main.js"></script> -->
+    <script src="./js/main.js"></script>
     <script>
         var scroll = new SmoothScroll('a[href*="#"]');
         AOS.init();
