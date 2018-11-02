@@ -8,3 +8,15 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Nunito';
 }
+
+.responder {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 1rem 0;
+}
+
+@media screen and (max-width: calc(800px + 2rem)) {
+    .responder {
+        margin: 0 1rem;
+    }
+}
