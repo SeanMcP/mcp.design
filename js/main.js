@@ -12,7 +12,7 @@ try {
 var header = document.querySelector('body > header');
 
 function changeHeaderOnScroll() {
-    if (document.scrollingElement.scrollTop > header.offsetHeight / 2) {
+    if (document.scrollingElement.scrollTop > header.offsetHeight) {
         header.classList.add('scrolled')
     } else {
         header.classList.remove('scrolled');

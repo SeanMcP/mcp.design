@@ -92,7 +92,22 @@ header nav a:hover, header nav a:active {
     height: 4rem;
 }
 
-section.banner img {
+section.banner {
+    align-items: center;
+    background-image: url('../img/banner.jpg');
+    background-size: cover;
+    background-position: center bottom;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+section.banner p {
+    font-family: 'Dancing Script';
+    font-size: 4rem;
+    margin: 1rem;
+    max-width: 800px;
+    text-align: right;
     width: 100%;
 }
 
@@ -164,6 +179,15 @@ i + span {
 
     .mobile-only {
         display: initial;
+    }
+
+    section.banner {
+        background-position-x: left;
+    }
+
+    section.banner p {
+        font-size: 3rem;
+        text-align: center;
     }
 
     body > footer div {
