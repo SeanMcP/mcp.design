@@ -20,9 +20,11 @@ function changeHeaderOnScroll() {
 }
 
 function offsetHeaderHeight() {
-    var nodes = document.querySelectorAll('.offset-header');
-    nodes.forEach(function(node) {
-        node.style.paddingTop = `${header.offsetHeight}px`;
+    var nodes = document.querySelectorAll('main > div > section');
+    nodes.forEach(function(node, index) {
+        if (index !== 0) {
+            node.style.paddingTop = `${header.offsetHeight}px`;
+        }
     });
 }
 
