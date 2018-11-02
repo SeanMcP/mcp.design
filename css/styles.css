@@ -51,7 +51,7 @@ header nav a {
     transition: all var(--quick-transition);
 }
 
-header nav a:hover {
+header nav a:hover, header nav a:active {
     background: salmon;
     color: white;
 }
@@ -119,5 +119,9 @@ footer li a {
     footer ul {
         align-items: center;
         margin: 1rem 0 0;
+    }
+
+    footer section {
+        text-align: center;
     }
 }
