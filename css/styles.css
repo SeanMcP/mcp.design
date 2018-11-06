@@ -177,6 +177,15 @@ section.work-category a.link-button {
     align-self: center;
 }
 
+#contact {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact .link-button {
+    align-self: center;
+}
+
 footer {
     background: #cbcbcb;
     color: #666;
