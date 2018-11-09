@@ -13,6 +13,7 @@
         'Open Sans',
         'Helvetica Neue',
         sans-serif;
+    --display-fonts: 'Nunito', var(--system-fonts);
 }
 
 body {
@@ -30,7 +31,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Nunito', var(--system-fonts);
+    font-family: var(--display-fonts);
     margin-bottom: 1rem;
     margin-top: 1em;
 }
@@ -114,12 +115,16 @@ header div {
     text-decoration: none;
 }
 
+#logo a {
+    color: inherit;
+}
+
 #logo img {
     height: 4rem;
 }
 
 #logo .title {
-    font-family: 'Nunito';
+    font-family: var(--display-fonts);
     font-weight: bold;
     font-size: 1.5rem;
     margin-left: 0.5rem;
@@ -130,7 +135,7 @@ header nav a,
     border: 2px solid var(--pink);
     border-radius: 0.5rem;
     color: var(--pink);
-    font-family: 'Nunito';
+    font-family: var(--display-fonts);
     font-weight: bold;
     text-decoration: none;
     padding: 0.5rem 1rem;
@@ -164,7 +169,7 @@ section.banner {
 }
 
 section.banner p {
-    font-family: 'Dancing Script';
+    font-family: 'Dancing Script', var(--display-fonts);
     font-size: 4rem;
     margin: 1rem;
     max-width: 800px;
