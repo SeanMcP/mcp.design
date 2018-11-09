@@ -283,7 +283,7 @@ i+span {
 }
 
 /* Mobile styles */
-@media screen and (max-width: calc(800px + 2rem)) {
+@media screen and (max-width: 960px) {
     .responder {
         margin: 0 1rem;
     }
