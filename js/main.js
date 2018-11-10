@@ -1,12 +1,12 @@
 try {
     var scroll = new SmoothScroll('a[href*="#"]');
-} catch {
-    console.log('smooth-scroll failed to load.');
+} catch (err) {
+    console.log('smooth-scroll failed to load:', err);
 }
 try {
     AOS.init();
-} catch {
-    console.log('aos failed to load.');
+} catch (err) {
+    console.log('aos failed to load:', err);
 }
 
 var header = document.querySelector('body > header');
@@ -21,7 +21,7 @@ function changeHeaderOnScroll() {
 
 function offsetHeaderHeight() {
     var nodes = document.querySelectorAll('main > div > section');
-    nodes.forEach(function(node, index) {
+    nodes.forEach(function (node, index) {
         if (index !== 0) {
             node.style.paddingTop = `${header.offsetHeight}px`;
         }
